@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salário Líquido</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Cálculo de Salário Líquido</h1>
+    <form name="salario" method="post">
+        Horas trabalhadas no mês: <input type="number" name="horasTrabalhadas"><br>
+        Valor da hora trabalhada: <input type="number" name="valorHora"><br>
+        Percentual desconto INSS: <input type="number" name="desconto"><br>
+        <input type="button" name="btn_calcula" value="Calcular Salário" onclick="calcular()">
+        <input type="reset" name="btn_cancela" value="Cancelar">
+    </form>
+
+    <hr>
+
+    <h2>DEMONSTRATIVO PARA CÁLCULO DE SALÁRIO MÍNIMO</h2>
+    <h3 id="hrTrab"></h3>
+    <h3 id="vlHora"></h3>
+    <h3 id="dcInss"></h3>
+
+    <hr>
+
+    <h3 id="slBrut"></h3>
+    <h3 id="toDesc"></h3>
+    <h3 id="slLiq"></h3>
+</body>
+</html>
